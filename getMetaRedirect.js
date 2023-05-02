@@ -2,6 +2,7 @@ module.exports = function getMetaRedirect(toPath, pathPrefix, siteUrl) {
 
   const ci = process.env.CI;
 
+  console.log("ci", ci) 
   let url = toPath.replace(pathPrefix, "").trim();
 
   const hasProtocol = url.includes("://");
