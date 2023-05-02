@@ -3,6 +3,7 @@ module.exports = function getMetaRedirect(toPath, pathPrefix, siteUrl) {
   const ci = process.env.CI;
 
   console.log("ci", ci) 
+  
   let url = toPath.replace(pathPrefix, "").trim();
 
   const hasProtocol = url.includes("://");
@@ -21,8 +22,8 @@ module.exports = function getMetaRedirect(toPath, pathPrefix, siteUrl) {
     url = `${url}/`.replace(/\/\/+/g, '/');
     */
       url = ci
-        ? url = `${url}`.replace(/\/\/+/g, "/")
-        : url = `${url}/`.replace(/\/\/+/g, "/");
+        ? `${url}`.replace(/\/\/+/g, "/")
+        : `${url}/`.replace(/\/\/+/g, "/");
     }
   }
 
