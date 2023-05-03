@@ -33,6 +33,8 @@ async function writeRedirectsFile(redirects, folder, pathPrefix, siteUrl) {
 exports.onPostBuild = ({ store }) => {
   const { redirects, program, config } = store.getState();
 
+  console.log("program", program)
+  console.log("config", config)
   let pathPrefix = "";
   if (program.prefixPaths) {
     pathPrefix = config.pathPrefix;
