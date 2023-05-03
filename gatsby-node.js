@@ -36,6 +36,7 @@ exports.onPostBuild = ({ store }) => {
   let pathPrefix = "";
   if (program.prefixPaths) {
     pathPrefix = config.pathPrefix;
+    console.log("pathPrefix", pathPrefix)
   }
 
   const siteUrl = config.siteMetadata.siteUrl;

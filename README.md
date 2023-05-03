@@ -1,30 +1,31 @@
 [![Travis][build-badge]][build]
+
 [![npm package][npm-badge]][npm]
 
 # gatsby-plugin-meta-redirect
 
-Generates meta redirect html files for redirecting on any static file host.
+This is a forked version. Original [plugin and repo available here](https://github.com/nsresulta/gatsby-plugin-meta-redirect).
 
-## Install
+MIT License
+Copyright (c) 2018 Get Chalk
 
-```sh
-npm install --save gatsby-plugin-meta-redirect
-```
+---
 
-or
+Generates meta redirect html files for redirecting on GitHub Pages.
 
-```sh
-yarn add gatsby-plugin-meta-redirect
-```
+## How to add to program
 
-## How to use
+**In your package.json**
 
-```js
-// In your gatsby-config.js
+`"gatsby-plugin-meta-redirect":  "https://github.com/layer5labs/gatsby-plugin-meta-redirect.git",`
+
+**In your gatsby-config.js**
+
 plugins: [
-  `gatsby-plugin-meta-redirect` // make sure to put last in the array
+
+`"gatsby-plugin-meta-redirect"` // make sure to put last in the array
+
 ];
-```
 
 ### Redirects
 
@@ -34,6 +35,7 @@ An example:
 
 ```js
 createRedirect({ fromPath: '/old-url', toPath: '/new-url', isPermanent: true });
+
 createRedirect({ fromPath: '/url', toPath: '/zn-CH/url', Language: 'zn' });
 ```
 
