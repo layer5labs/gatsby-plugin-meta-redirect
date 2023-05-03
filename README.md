@@ -17,7 +17,7 @@ Generates meta redirect html files for redirecting on GitHub Pages.
 
 **In your package.json**
 
-`"gatsby-plugin-meta-redirect":  "https://github.com/layer5labs/gatsby-plugin-meta-redirect.git",`
+`npm i https://github.com/layer5labs/gatsby-plugin-meta-redirect`
 
 **In your gatsby-config.js**
 
