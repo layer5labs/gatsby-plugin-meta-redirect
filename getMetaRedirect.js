@@ -19,7 +19,7 @@ module.exports = function getMetaRedirect(toPath, pathPrefix, siteUrl) {
     original code:
     url = `${url}/`.replace(/\/\/+/g, '/');
     */
-      url = ci
+      url = ci === "true"
         ? `${url}`.replace(/\/\/+/g, "/")
         : `${url}/`.replace(/\/\/+/g, "/");
     }
